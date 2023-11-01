@@ -1,10 +1,15 @@
-import { Button } from '@/components/ui/button'
-import Image from 'next/image'
+"use client";
+
+import { Modal } from '@/components/ui/modal';
+
 
 const SetupPage = ()=> {
   return (
     <div className='p-4'>
-      this is a protected route!
+      <Modal title="Test" description='Test Description' isOpen onClose={() => {
+      }}>
+Children
+      </Modal>
     </div>
   )
 }
